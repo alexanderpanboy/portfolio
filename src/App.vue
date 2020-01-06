@@ -7,18 +7,18 @@
           <b>Alexander</b> Pan
         </a>
         <div style="margin-left:auto; margin-right:0">
-          <v-btn icon small style="padding-right:8px;">
+          <a href='https://www.facebook.com/a0912716568' target="_blank"> <v-btn icon small style="padding-right:8px;">
             <v-icon>{{fbLogo}}</v-icon>
-          </v-btn>
-          <v-btn icon small style="padding-right:8px;">
+          </v-btn></a>
+          <a href='https://www.instagram.com/alexanderpanboy' target="_blank"> <v-btn icon small style="padding-right:8px;">
             <v-icon>{{igLogo}}</v-icon>
-          </v-btn>
-          <v-btn icon small style="padding-right:8px;">
+          </v-btn></a>
+          <a href='https://github.com/alexanderpanboy' target="_blank"><v-btn icon small style="padding-right:8px;">
             <v-icon>{{gitHubLogo}}</v-icon>
-          </v-btn>
-          <v-btn icon small style="padding-right:8px;">
+          </v-btn></a>
+          <a href='https://www.linkedin.com/in/alexander-a-pan-444755151' target="_blank"><v-btn icon small style="padding-right:8px;">
             <v-icon>{{linkedInLogo}}</v-icon>
-          </v-btn>
+          </v-btn></a>
         </div>
 
         <!-- Float links to the right. Hide them on small screens -->
@@ -58,25 +58,25 @@
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-display-container">
             <div class="w3-display-topleft w3-black w3-padding">Apex Metalle Design</div>
-            <img src="/assets/metalle.jpg" alt="House" style="width:100%" />
+            <img src="/assets/metalle.jpg" alt="Apex" style="width:100%" />
           </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-display-container">
             <div class="w3-display-topleft w3-black w3-padding">Ubet</div>
-            <img src="/assets/ubet.jpg" alt="House" style="width:100%" />
+            <img src="/assets/ubet.jpg" alt="Ubet" style="width:100%" />
           </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-display-container">
             <div class="w3-display-topleft w3-black w3-padding">GFaceManager</div>
-            <img src="/assets/gFace.jpg" alt="House" style="width:100%" />
+            <img src="/assets/gFace.jpg" alt="GFace" style="width:100%" />
           </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-display-container">
             <div class="w3-display-topleft w3-black w3-padding">Wood Coffee Company</div>
-            <img src="/assets/woodCoffee.jpg" alt="House" style="width:100%" />
+            <img src="/assets/woodCoffee.jpg" alt="WOOD" style="width:100%" />
           </div>
         </div>
       </div>
@@ -115,6 +115,7 @@
           </p>
           <p>
             <button class="w3-button w3-light-grey w3-block">Contact</button>
+            <a href='https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Ab7d88a64-e0a7-4615-8b49-83fc18d28f35' target="_blank"><button class="w3-button w3-light-grey w3-block">Resume</button></a>
           </p>
         </div>
       </div>
