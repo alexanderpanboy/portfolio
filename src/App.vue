@@ -60,25 +60,25 @@
 
       <div class="w3-row-padding">
         <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="w3-display-container">
+          <div class="w3-display-container projectsPhoto">
             <div class="w3-display-topleft w3-black w3-padding">Apex Metalle Design</div>
             <img src="/assets/metalle.jpg" alt="Apex" style="width:100%" />
           </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="w3-display-container">
+          <div class="w3-display-container projectsPhoto">
             <div class="w3-display-topleft w3-black w3-padding">Ubet</div>
             <img src="/assets/ubet.jpg" alt="Ubet" style="width:100%" />
           </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="w3-display-container">
+          <div class="w3-display-container projectsPhoto">
             <div class="w3-display-topleft w3-black w3-padding">GFaceManager</div>
             <img src="/assets/gFace.jpg" alt="GFace" style="width:100%" />
           </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="w3-display-container">
+          <div class="w3-display-container projectsPhoto">
             <div class="w3-display-topleft w3-black w3-padding">Wood Coffee Company</div>
             <img src="/assets/woodCoffee.jpg" alt="WOOD" style="width:100%" />
           </div>
@@ -86,16 +86,16 @@
       </div>
 
       <div class="w3-row-padding">
-        <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="w3-display-container">
+        <div class="w3-col l3 m6 w3-margin-bottom ">
+          <div class="w3-display-container projectsPhoto">
             <div class="w3-display-topleft w3-black w3-padding">mag</div>
-            <img src="/w3images/house4.jpg" alt="House" style="width:99%" />
+            <img src="/assets/woodCoffee.jpg" alt="House" style="width:99%" />
           </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="w3-display-container">
+          <div class="w3-display-container projectsPhoto">
             <div class="w3-display-topleft w3-black w3-padding">foto</div>
-            <img src="/w3images/house3.jpg" alt="House" style="width:99%" />
+            <img src="/assets/woodCoffee.jpg" alt="House" style="width:99%" />
           </div>
         </div>
       </div>
@@ -232,5 +232,19 @@
 
   .w3-animate-zoom {
     animation: animatezoom 2.7s;
+  }
+  .projectsPhoto>div{
+    z-index: 2;
+    
+  }
+  .projectsPhoto>img:hover{
+    transform: scale(1.2);
+    transition: all 500ms ease-in;
+    filter: invert(1);
+    opacity:0.5;
+  }
+
+  .projectsPhoto{
+    overflow: hidden;
   }
 </style>
