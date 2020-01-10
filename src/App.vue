@@ -60,25 +60,25 @@
 
       <div class="w3-row-padding">
         <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="w3-display-container projectsPhoto">
+          <div class="w3-display-container projectsPhoto" type="button">
             <div class="w3-display-topleft w3-black w3-padding">Apex Metalle Design</div>
             <img src="/assets/metalle.jpg" alt="Apex" style="width:100%" />
           </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="w3-display-container projectsPhoto">
+          <div class="w3-display-container projectsPhoto" type="button">
             <div class="w3-display-topleft w3-black w3-padding">Ubet</div>
             <img src="/assets/ubet.jpg" alt="Ubet" style="width:100%" />
           </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="w3-display-container projectsPhoto">
+          <div class="w3-display-container projectsPhoto" type="button">
             <div class="w3-display-topleft w3-black w3-padding">GFaceManager</div>
             <img src="/assets/gFace.jpg" alt="GFace" style="width:100%" />
           </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="w3-display-container projectsPhoto">
+          <div class="w3-display-container projectsPhoto" type="button">
             <div class="w3-display-topleft w3-black w3-padding">Wood Coffee Company</div>
             <img src="/assets/woodCoffee.jpg" alt="WOOD" style="width:100%" />
           </div>
@@ -87,13 +87,13 @@
 
       <div class="w3-row-padding">
         <div class="w3-col l3 m6 w3-margin-bottom ">
-          <div class="w3-display-container projectsPhoto">
+          <div class="w3-display-container projectsPhoto" type="button">
             <div class="w3-display-topleft w3-black w3-padding">mag</div>
             <img src="/assets/woodCoffee.jpg" alt="House" style="width:99%" />
           </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="w3-display-container projectsPhoto">
+          <div class="w3-display-container projectsPhoto" type="button">
             <div class="w3-display-topleft w3-black w3-padding">foto</div>
             <img src="/assets/woodCoffee.jpg" alt="House" style="width:99%" />
           </div>
@@ -110,7 +110,7 @@
           (year-round) at a local coffee shop, poorly tending to my succulents, and playing with film camera.</p>
       </div>
 
-      <div class="w3-row-padding w3-redscal">
+      <div class="w3-row-padding w3-redscal" align="center;">
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div>
             <img src="/assets/alexProfilePic.jpg" alt="Alex" style="width:100%" />
@@ -123,7 +123,6 @@
             as an intern full stack developer at GIGABYTE Technology. Feel free to take a look at some of my work.
           </p>
           <p>
-            <button style="margin-bottom:3px;" class="w3-button w3-dark-grey w3-block">Contact</button>
             <a href='/assets/APAN.pdf' target="_blank"><button
                 class="w3-button w3-dark-grey w3-block">Resume</button></a>
           </p>
