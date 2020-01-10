@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <HelloWorld></HelloWorld>
     <div class="w3-top">
       <div style="display:flex" class="w3-bar w3-white w3-wide w3-padding w3-card">
         <a href="#home" class="w3-bar-item w3-button">
@@ -61,8 +60,10 @@
       <div class="w3-row-padding">
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-display-container projectsPhoto" type="button">
+            <router-link :to="{ component: 'metalle' }"><metalle></metalle>
             <div class="w3-display-topleft w3-black w3-padding">Apex Metalle Design</div>
             <img src="/assets/metalle.jpg" alt="Apex" style="width:100%" />
+            </router-link>
           </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
@@ -110,7 +111,8 @@
           (year-round) at a local coffee shop, poorly tending to my succulents, and playing with film camera.</p>
       </div>
 
-      <div class="w3-row-padding w3-redscal" align="center;">
+      <div class="w3-row-padding w3-redscal aboutBox" align="center">
+        <!-- WTFWTFWTF -->
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div>
             <img src="/assets/alexProfilePic.jpg" alt="Alex" style="width:100%" />
@@ -123,6 +125,8 @@
             as an intern full stack developer at GIGABYTE Technology. Feel free to take a look at some of my work.
           </p>
           <p>
+            <a href="#contact"><button style="margin-bottom:5px;"
+                class="w3-button w3-dark-grey w3-block">Contact</button></a>
             <a href='/assets/APAN.pdf' target="_blank"><button
                 class="w3-button w3-dark-grey w3-block">Resume</button></a>
           </p>
@@ -193,7 +197,7 @@
 </template>
 
 <script>
-  import HelloWorld from "./components/HelloWorld.vue";
+import metalle from './components/metalle';
   import {
     mdiFacebook,
     mdiInstagram,
@@ -205,7 +209,7 @@
   export default {
     name: "app",
     components: {
-      HelloWorld
+      metalle
     },
     data() {
       return {
@@ -246,4 +250,7 @@
   .projectsPhoto{
     overflow: hidden;
   }
+  .aboutBox{
+    margin: 0 auto;
+}
 </style>
