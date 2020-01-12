@@ -3,12 +3,13 @@ import App from './App.vue'
 import VueRouter from 'vue-router';
 import vuetify from './plugins/vuetify';
 import metalle from './components/metalle.vue';
+import hello from './components/HelloWorld.vue'
 
 
 Vue.use(VueRouter);
 const routes = [
   {path:'/metalle', component : metalle },
-
+  {path:'/hello', component : hello },
 ];
 
 const router = new VueRouter({

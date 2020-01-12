@@ -1,14 +1,11 @@
 <template>
-  <v-container>
-  
-  </v-container>
+  <v-container>metal</v-container>
 </template>
 
 <script>
 export default {
-  name: 'metalle',
+  name: "metalle",
 
-  data: () => ({
-  })
+  data: () => ({})
 };
 </script>
