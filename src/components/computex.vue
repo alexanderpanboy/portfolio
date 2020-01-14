@@ -1,34 +1,32 @@
 <template>
   <v-container>
-    <!-- Header -->
     <header
-      class="w3-display-container w3-content w3-wide w3-animate-zoom"
-      style="max-width:1500px;"
-      id="home"
-    >
-      <img class="w3-image" src="/assets/mainPage.jpg" alt="MainPage" width="1500" height="800" />
-      <div class="w3-display-middle w3-margin-top w3-center">
-        <h1 class="w3-xxlarge w3-text-white">
-          <span class="w3-padding w3-black w3-opacity-min">
-            <b>Alexander</b>
-          </span>
-          <span class="w3-hide-small w3-text-light-grey">Pan</span>
-        </h1>
-      </div>
-    </header>
-
+    class="w3-display-container w3-content w3-wide w3-animate-zoom"
+    style="max-width:1500px;"
+    id="home"
+  >
+    <img class="w3-image" src="/assets/mainPage.jpg" alt="MainPage" width="1500" height="800" />
+    <div class="w3-display-middle w3-margin-top w3-center">
+      <h1 class="w3-xxlarge w3-text-white">
+        <span class="w3-padding w3-black w3-opacity-min">
+          <b>Alexander</b>
+        </span>
+        <span class="w3-hide-small w3-text-light-grey">Pan</span>
+      </h1>
+    </div>
+  </header>
     <!-- Page content -->
     <div class="w3-content w3-padding" style="max-width:1564px">
       <!-- Project Section -->
       <div class="w3-container w3-padding-32" id="projects">
-        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Metalle</h3>
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Computex</h3>
       </div>
 
-      <v-carousel :show-arrows="false">
+      <v-carousel :show-arrows="false" style="height: auto;">
         <v-carousel-item
-          v-for="(metal,i) in metals"
+          v-for="(comp,i) in comps"
           :key="i"
-          :src="metal.src"
+          :src="comp.src"
         ></v-carousel-item>
       </v-carousel>
 
@@ -109,33 +107,37 @@
   
         <!-- End page content -->
       </div>
+
   </v-container>
 </template>
 
 <script>
 export default {
-  name: "metalle",
+  name: "computex",
 
   data() { return {
 
-    metals: [
-        {
-          src:'/assets/metal1.png',
-    
-        },
-        {
-          src:'/assets/metal2.png',
-    
-        },  {
-          src:'/assets/metal3.png',
-    
-        },  {
-          src:'/assets/metal4.png',
-    
-        },
-      ],
+comps: [
+    {
+      src:'/assets/computex.png',
+    },
+    {
+      src:'/assets/comp2.png',
+    },
+    {
+      src:'/assets/comp3.png',
+    }, {
+      src:'/assets/comp4.png',
+    }, {
+      src:'/assets/comp5.png',
+    }, {
+      src:'/assets/comp6.png',
+    }, {
+      src:'/assets/comp7.png',
+    },
+  ],
 
 };
-  }
-  };
+}
+};
 </script>

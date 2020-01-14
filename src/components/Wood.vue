@@ -21,14 +21,14 @@
     <div class="w3-content w3-padding" style="max-width:1564px">
       <!-- Project Section -->
       <div class="w3-container w3-padding-32" id="projects">
-        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Metalle</h3>
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">WOOD Coffee Company</h3>
       </div>
 
       <v-carousel :show-arrows="false">
         <v-carousel-item
-          v-for="(metal,i) in metals"
+          v-for="(wood,i) in woods"
           :key="i"
-          :src="metal.src"
+          :src="wood.src"
         ></v-carousel-item>
       </v-carousel>
 
@@ -114,28 +114,40 @@
 
 <script>
 export default {
-  name: "metalle",
+  name: "wood",
 
   data() { return {
 
-    metals: [
+woods: [
         {
-          src:'/assets/metal1.png',
+          src:'/assets/wood1.png',
     
         },
         {
-          src:'/assets/metal2.png',
+          src:'/assets/wood2.png',
     
         },  {
-          src:'/assets/metal3.png',
+          src:'/assets/wood3.png',
     
         },  {
-          src:'/assets/metal4.png',
+          src:'/assets/wood4.png',
+    
+        }, {
+          src:'/assets/wood5.png',
+    
+        }, {
+          src:'/assets/wood6.png',
+    
+        }, {
+          src:'/assets/wood7.png',
+    
+        }, {
+          src:'/assets/wood8.png',
     
         },
       ],
 
 };
-  }
-  };
+}
+};
 </script>

@@ -26,30 +26,38 @@
 
       <div class="w3-row-padding">
         <div class="w3-col l3 m6 w3-margin-bottom">
+          <router-link to="/metalle">
           <div class="w3-display-container projectsPhoto" type="button">
-            <router-link to="/metalle">
+           
               <div class="w3-display-topleft w3-black w3-padding">Apex Metalle Design</div>
               <img src="/assets/metalle.jpg" alt="Apex" style="width:100%" />
-            </router-link>
+           
           </div>
+        </router-link>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
+          <router-link to="/computex">
           <div class="w3-display-container projectsPhoto" type="button">
-            <div class="w3-display-topleft w3-black w3-padding">Ubet</div>
-            <img src="/assets/ubet.jpg" alt="Ubet" style="width:100%" />
+            <div class="w3-display-topleft w3-black w3-padding">Computex</div>
+            <img src="/assets/computex.png" alt="GreenHouse" style="width:100%" />
           </div>
+          </router-link>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
+          <router-link to="/gface">
           <div class="w3-display-container projectsPhoto" type="button">
             <div class="w3-display-topleft w3-black w3-padding">GFaceManager</div>
             <img src="/assets/gFace.jpg" alt="GFace" style="width:100%" />
           </div>
+          </router-link>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
+          <router-link to="/wood">
           <div class="w3-display-container projectsPhoto" type="button">
-            <div class="w3-display-topleft w3-black w3-padding">Wood Coffee Company</div>
+            <div class="w3-display-topleft w3-black w3-padding">WOOD Coffee Company</div>
             <img src="/assets/woodCoffee.jpg" alt="WOOD" style="width:100%" />
           </div>
+          </router-link>
         </div>
       </div>
 

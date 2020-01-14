@@ -21,14 +21,14 @@
     <div class="w3-content w3-padding" style="max-width:1564px">
       <!-- Project Section -->
       <div class="w3-container w3-padding-32" id="projects">
-        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Metalle</h3>
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">GFaceManager</h3>
       </div>
 
       <v-carousel :show-arrows="false">
         <v-carousel-item
-          v-for="(metal,i) in metals"
+          v-for="(gf,i) in gfs"
           :key="i"
-          :src="metal.src"
+          :src="gf.src"
         ></v-carousel-item>
       </v-carousel>
 
@@ -114,28 +114,31 @@
 
 <script>
 export default {
-  name: "metalle",
+  name: "gface",
 
   data() { return {
 
-    metals: [
+gfs: [
         {
-          src:'/assets/metal1.png',
+          src:'/assets/gf1.png',
     
         },
         {
-          src:'/assets/metal2.png',
+          src:'/assets/gf2.png',
     
         },  {
-          src:'/assets/metal3.png',
+          src:'/assets/gf3.png',
     
         },  {
-          src:'/assets/metal4.png',
+          src:'/assets/gf4.png',
+    
+        }, {
+          src:'/assets/gf5.png',
     
         },
       ],
 
 };
-  }
-  };
+}
+};
 </script>
