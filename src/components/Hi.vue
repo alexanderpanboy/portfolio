@@ -64,14 +64,14 @@
       <div class="w3-row-padding">
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-display-container projectsPhoto" type="button">
-            <div class="w3-display-topleft w3-black w3-padding">mag</div>
-            <img src="/assets/woodCoffee.jpg" alt="House" style="width:99%" />
+            <div class="w3-display-topleft w3-black w3-padding">Postgirl</div>
+            <img src="/assets/postgirl.png" alt="Postgirl" style="width:100%" />
           </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-display-container projectsPhoto" type="button">
-            <div class="w3-display-topleft w3-black w3-padding">foto</div>
-            <img src="/assets/woodCoffee.jpg" alt="House" style="width:99%" />
+            <div class="w3-display-topleft w3-black w3-padding">Ubet</div>
+            <img src="/assets/dice.png" alt="Ubet" style="width:100%;" />
           </div>
         </div>
       </div>
