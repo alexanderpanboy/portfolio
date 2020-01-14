@@ -13,7 +13,7 @@ const routes = [
   { path: "/metalle", component: metalle },
   { path: "/computex", component: computex },
   { path: "/", component: hi },
-  { path: "/gFaceManager", component: Gface },
+  { path: "/gface", component: Gface },
   { path: "/wood", component: wood },
 ];
 
