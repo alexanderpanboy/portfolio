@@ -159,6 +159,16 @@
 export default {
   name: "aa",
 
-  data: () => ({})
-};
+  data: () => ({}),
+
+  $( document ){ready(function() {
+ Email.send({
+Host : "smtp.gmail.com",
+Username : "a0912716568",
+Password : "Alex37123712@",
+To : 'them@website.com',
+From : "a0912716568@gmail.com",
+Subject : "This is the subject",
+Body : "And this is the body"}).then( message => alert(message));});
+},}
 </script>

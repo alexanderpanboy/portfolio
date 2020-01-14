@@ -97,6 +97,8 @@ export default {
       copyRightLogo: mdiCopyright
     };
   }
+  
+
 };
 </script>
 

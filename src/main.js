@@ -8,6 +8,7 @@ import hi from "./components/Hi.vue";
 import Gface from "./components/Gface.vue";
 import wood from "./components/Wood.vue";
 
+
 Vue.use(VueRouter);
 const routes = [
   { path: "/metalle", component: metalle },
