@@ -21,12 +21,13 @@
       <div class="w3-container w3-padding-32" id="projects">
         <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Computex</h3>
       </div>
+      
 
       <v-carousel :show-arrows="false" style="height: auto;">
         <v-carousel-item
-          v-for="(comp,i) in comps"
+          v-for="(maccomp,i) in maccomps"
           :key="i"
-          :src="comp.src"
+          :src="maccomp.src"
         ></v-carousel-item>
       </v-carousel>
 
@@ -117,23 +118,23 @@ export default {
 
   data() { return {
 
-comps: [
+maccomps: [
     {
-      src:'/assets/computex.png',
+      src:'/assets/maccomp1.png',
     },
     {
-      src:'/assets/comp2.png',
+      src:'/assets/maccomp2.png',
     },
     {
-      src:'/assets/comp3.png',
+      src:'/assets/maccomp3.png',
     }, {
-      src:'/assets/comp4.png',
+      src:'/assets/maccomp4.png',
     }, {
-      src:'/assets/comp5.png',
+      src:'/assets/maccomp5.png',
     }, {
-      src:'/assets/comp6.png',
+      src:'/assets/maccomp6.png',
     }, {
-      src:'/assets/comp7.png',
+      src:'/assets/maccomp7.png',
     },
   ],
 

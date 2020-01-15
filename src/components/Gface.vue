@@ -26,9 +26,9 @@
 
       <v-carousel :show-arrows="false">
         <v-carousel-item
-          v-for="(gf,i) in gfs"
+          v-for="(macgf,i) in macgfs"
           :key="i"
-          :src="gf.src"
+          :src="macgf.src"
         ></v-carousel-item>
       </v-carousel>
 
@@ -118,22 +118,22 @@ export default {
 
   data() { return {
 
-gfs: [
+macgfs: [
         {
-          src:'/assets/gf1.png',
+          src:'/assets/macgf1.jpg',
     
         },
         {
-          src:'/assets/gf2.png',
+          src:'/assets/macgf2.jpg',
     
         },  {
-          src:'/assets/gf3.png',
+          src:'/assets/macgf3.jpg',
     
         },  {
-          src:'/assets/gf4.png',
+          src:'/assets/macgf4.jpg',
     
         }, {
-          src:'/assets/gf5.png',
+          src:'/assets/macgf5.jpg',
     
         },
       ],

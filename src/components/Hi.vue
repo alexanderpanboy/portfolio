@@ -30,7 +30,7 @@
           <div class="w3-display-container projectsPhoto" type="button">
            
               <div class="w3-display-topleft w3-black w3-padding">Apex Metalle Design</div>
-              <img src="/assets/metalle.jpg" alt="Apex" style="width:100%" />
+              <img src="/assets/macmetal1.png" alt="Apex" style="width:100%" />
            
           </div>
         </router-link>
@@ -39,7 +39,7 @@
           <router-link to="/computex">
           <div class="w3-display-container projectsPhoto" type="button">
             <div class="w3-display-topleft w3-black w3-padding">Computex</div>
-            <img src="/assets/computex.png" alt="GreenHouse" style="width:100%" />
+            <img src="/assets/maccomp1.png" alt="GreenHouse" style="width:100%" />
           </div>
           </router-link>
         </div>
@@ -47,7 +47,7 @@
           <router-link to="/gface">
           <div class="w3-display-container projectsPhoto" type="button">
             <div class="w3-display-topleft w3-black w3-padding">GFaceManager</div>
-            <img src="/assets/gFace.jpg" alt="GFace" style="width:100%" />
+            <img src="/assets/macgf1.jpg" alt="GFace" style="width:100%" />
           </div>
           </router-link>
         </div>
@@ -65,13 +65,13 @@
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-display-container projectsPhoto" type="button">
             <div class="w3-display-topleft w3-black w3-padding">Postgirl</div>
-            <img src="/assets/postgirl.png" alt="Postgirl" style="width:100%" />
+            <img src="/assets/macpostgirl.png" alt="Postgirl" style="width:100%" />
           </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-display-container projectsPhoto" type="button">
             <div class="w3-display-topleft w3-black w3-padding">Ubet</div>
-            <img src="/assets/dice.png" alt="Ubet" style="width:100%;" />
+            <img src="/assets/macubet.png" alt="Ubet" style="width:100%;" />
           </div>
         </div>
       </div>
@@ -161,14 +161,5 @@ export default {
 
   data: () => ({}),
 
-  $( document ){ready(function() {
- Email.send({
-Host : "smtp.gmail.com",
-Username : "a0912716568",
-Password : "Alex37123712@",
-To : 'them@website.com',
-From : "a0912716568@gmail.com",
-Subject : "This is the subject",
-Body : "And this is the body"}).then( message => alert(message));});
-},}
+ }
 </script>

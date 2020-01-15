@@ -26,9 +26,9 @@
 
       <v-carousel :show-arrows="false">
         <v-carousel-item
-          v-for="(metal,i) in metals"
+          v-for="(macmetal,i) in macmetals"
           :key="i"
-          :src="metal.src"
+          :src="macmetal.src"
         ></v-carousel-item>
       </v-carousel>
 
@@ -118,19 +118,19 @@ export default {
 
   data() { return {
 
-    metals: [
+    macmetals: [
         {
-          src:'/assets/metal1.png',
+          src:'/assets/macmetal1.png',
     
         },
         {
-          src:'/assets/metal2.png',
+          src:'/assets/macmetal2.png',
     
         },  {
-          src:'/assets/metal3.png',
+          src:'/assets/macmetal3.png',
     
         },  {
-          src:'/assets/metal4.png',
+          src:'/assets/macmetal4.png',
     
         },
       ],
