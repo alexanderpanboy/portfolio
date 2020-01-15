@@ -131,4 +131,7 @@ export default {
 .aboutBox {
   margin: 0 auto;
 }
+.v-image__image--cover {
+  background-size: contain !important;
+}
 </style>
