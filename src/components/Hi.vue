@@ -27,36 +27,34 @@
       <div class="w3-row-padding">
         <div class="w3-col l3 m6 w3-margin-bottom">
           <router-link to="/metalle">
-          <div class="w3-display-container projectsPhoto" type="button">
-           
+            <div class="w3-display-container projectsPhoto" type="button">
               <div class="w3-display-topleft w3-black w3-padding">Apex Metalle Design</div>
               <img src="/assets/metalle.jpg" alt="Apex" style="width:100%" />
-           
-          </div>
-        </router-link>
+            </div>
+          </router-link>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <router-link to="/computex">
-          <div class="w3-display-container projectsPhoto" type="button">
-            <div class="w3-display-topleft w3-black w3-padding">Computex</div>
-            <img src="/assets/computex.png" alt="GreenHouse" style="width:100%" />
-          </div>
+            <div class="w3-display-container projectsPhoto" type="button">
+              <div class="w3-display-topleft w3-black w3-padding">Computex</div>
+              <img src="/assets/computex.png" alt="GreenHouse" style="width:100%" />
+            </div>
           </router-link>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <router-link to="/gface">
-          <div class="w3-display-container projectsPhoto" type="button">
-            <div class="w3-display-topleft w3-black w3-padding">GFaceManager</div>
-            <img src="/assets/gFace.jpg" alt="GFace" style="width:100%" />
-          </div>
+            <div class="w3-display-container projectsPhoto" type="button">
+              <div class="w3-display-topleft w3-black w3-padding">GFaceManager</div>
+              <img src="/assets/gFace.jpg" alt="GFace" style="width:100%" />
+            </div>
           </router-link>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <router-link to="/wood">
-          <div class="w3-display-container projectsPhoto" type="button">
-            <div class="w3-display-topleft w3-black w3-padding">WOOD Coffee Company</div>
-            <img src="/assets/woodCoffee.jpg" alt="WOOD" style="width:100%" />
-          </div>
+            <div class="w3-display-container projectsPhoto" type="button">
+              <div class="w3-display-topleft w3-black w3-padding">WOOD Coffee Company</div>
+              <img src="/assets/woodCoffee.jpg" alt="WOOD" style="width:100%" />
+            </div>
           </router-link>
         </div>
       </div>
@@ -116,14 +114,22 @@
       <div class="w3-container w3-padding-32" id="contact">
         <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
         <p>Lets get in touch and talk about your next project.</p>
-        <form action="/action_page.php" target="_blank">
-          <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" />
+        <form v-on:submit.prevent>
+          <input
+            class="w3-input w3-border"
+            type="text"
+            placeholder="Name"
+            required
+            name="Name"
+            v-model="name"
+          />
           <input
             class="w3-input w3-section w3-border"
             type="text"
             placeholder="Email"
             required
             name="Email"
+            v-model="email"
           />
           <input
             class="w3-input w3-section w3-border"
@@ -131,6 +137,7 @@
             placeholder="Subject"
             required
             name="Subject"
+            v-model="subject"
           />
           <input
             class="w3-input w3-section w3-border"
@@ -138,10 +145,9 @@
             placeholder="Comment"
             required
             name="Comment"
+            v-model="content"
           />
-          <button class="w3-button w3-black w3-section" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
+          <button class="w3-button w3-black w3-section" v-on:click="sendMail">SEND MESSAGE</button>
         </form>
       </div>
 
@@ -158,17 +164,28 @@
 <script>
 export default {
   name: "aa",
+  data: () => ({ email: "", subject: "", content: "", name: "" }),
+  methods: {
+    sendMail: function(event) {
+      console.log(this.$data.email);
+      emailjs.init("user_u4GAv8TMoLRBRzc85WVML");
+      if (!(this.email, this.subject, this.content, this.name)) return;
+      var templateParams = {
+        from: this.email,
+        subject: this.subject,
+        content: this.content,
+        name: this.name
+      };
 
-  data: () => ({}),
-
-  $( document ){ready(function() {
- Email.send({
-Host : "smtp.gmail.com",
-Username : "a0912716568",
-Password : "Alex37123712@",
-To : 'them@website.com',
-From : "a0912716568@gmail.com",
-Subject : "This is the subject",
-Body : "And this is the body"}).then( message => alert(message));});
-},}
+      emailjs.send("gmail", "template_SnVkR0DV", templateParams).then(
+        function(response) {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function(error) {
+          console.log("FAILED...", error);
+        }
+      );
+    }
+  }
+};
 </script>
