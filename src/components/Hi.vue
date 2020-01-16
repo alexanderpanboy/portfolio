@@ -27,11 +27,12 @@
       <div class="w3-row-padding">
         <div class="w3-col l3 m6 w3-margin-bottom">
           <router-link to="/metalle">
-          <div class="w3-display-container projectsPhoto" type="button">
-           
-              <div class="w3-display-topleft w3-black w3-padding">Apex Metalle Design</div>
+          <div class="w3-display-container projectsPhoto" type="button">          
+              <div class="w3-display-topleft w3-black w3-padding">Apex Metalle Design</div>              
               <img src="/assets/macmetal1.png" alt="Apex" style="width:100%" />
-           
+              <div class="photo-text">
+                <h4>Web Design</h4>
+              </div>             
           </div>
         </router-link>
         </div>
@@ -40,6 +41,9 @@
           <div class="w3-display-container projectsPhoto" type="button">
             <div class="w3-display-topleft w3-black w3-padding">Computex</div>
             <img src="/assets/maccomp1.png" alt="GreenHouse" style="width:100%" />
+            <div class="photo-text">
+              <h4>Web Design</h4>
+            </div>        
           </div>
           </router-link>
         </div>
@@ -48,6 +52,9 @@
           <div class="w3-display-container projectsPhoto" type="button">
             <div class="w3-display-topleft w3-black w3-padding">GFaceManager</div>
             <img src="/assets/macgf1.jpg" alt="GFace" style="width:100%" />
+            <div class="photo-text">
+              <h4>Web Design</h4>
+            </div>        
           </div>
           </router-link>
         </div>
@@ -56,6 +63,9 @@
           <div class="w3-display-container projectsPhoto" type="button">
             <div class="w3-display-topleft w3-black w3-padding">WOOD Coffee Company</div>
             <img src="/assets/woodCoffee.jpg" alt="WOOD" style="width:100%" />
+            <div class="photo-text">
+              <h4>Brand & Product Design</h4>
+            </div>        
           </div>
           </router-link>
         </div>
@@ -66,12 +76,18 @@
           <div class="w3-display-container projectsPhoto" type="button">
             <div class="w3-display-topleft w3-black w3-padding">Postgirl</div>
             <img src="/assets/macpostgirl.png" alt="Postgirl" style="width:100%" />
+            <div class="photo-text">
+              <h4>Web Design</h4>
+            </div>        
           </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-display-container projectsPhoto" type="button">
-            <div class="w3-display-topleft w3-black w3-padding">Ubet</div>
+            <div class="w3-display-topleft w3-black w3-padding projectTitle">Ubet</div>
             <img src="/assets/macubet.png" alt="Ubet" style="width:100%;" />
+            <div class="photo-text">
+              <h4>Phone App Design</h4>
+            </div>        
           </div>
         </div>
       </div>

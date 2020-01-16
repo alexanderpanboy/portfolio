@@ -120,20 +120,20 @@ export default {
 
 macgfs: [
         {
-          src:'/assets/macgf1.jpg',
+          src:'/assets/macgf1.png',
     
         },
         {
-          src:'/assets/macgf2.jpg',
+          src:'/assets/macgf2.png',
     
         },  {
-          src:'/assets/macgf3.jpg',
+          src:'/assets/macgf3.png',
     
         },  {
-          src:'/assets/macgf4.jpg',
+          src:'/assets/macgf4.png',
     
         }, {
-          src:'/assets/macgf5.jpg',
+          src:'/assets/macgf5.png',
     
         },
       ],
