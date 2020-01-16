@@ -27,34 +27,46 @@
       <div class="w3-row-padding">
         <div class="w3-col l3 m6 w3-margin-bottom">
           <router-link to="/metalle">
-            <div class="w3-display-container projectsPhoto" type="button">
-              <div class="w3-display-topleft w3-black w3-padding">Apex Metalle Design</div>
-              <img src="/assets/metalle.jpg" alt="Apex" style="width:100%" />
-            </div>
-          </router-link>
+          <div class="w3-display-container projectsPhoto" type="button">          
+              <div class="w3-display-topleft w3-black w3-padding">Apex Metalle Design</div>              
+              <img src="/assets/macmetal1.png" alt="Apex" style="width:100%" />
+              <div class="photo-text">
+                <h4>Web Design</h4>
+              </div>             
+          </div>
+        </router-link>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <router-link to="/computex">
-            <div class="w3-display-container projectsPhoto" type="button">
-              <div class="w3-display-topleft w3-black w3-padding">Computex</div>
-              <img src="/assets/computex.png" alt="GreenHouse" style="width:100%" />
-            </div>
+          <div class="w3-display-container projectsPhoto" type="button">
+            <div class="w3-display-topleft w3-black w3-padding">Computex</div>
+            <img src="/assets/maccomp1.png" alt="GreenHouse" style="width:100%" />
+            <div class="photo-text">
+              <h4>Web Design</h4>
+            </div>        
+          </div>
           </router-link>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <router-link to="/gface">
-            <div class="w3-display-container projectsPhoto" type="button">
-              <div class="w3-display-topleft w3-black w3-padding">GFaceManager</div>
-              <img src="/assets/gFace.jpg" alt="GFace" style="width:100%" />
-            </div>
+          <div class="w3-display-container projectsPhoto" type="button">
+            <div class="w3-display-topleft w3-black w3-padding">GFaceManager</div>
+            <img src="/assets/macgf1.jpg" alt="GFace" style="width:100%" />
+            <div class="photo-text">
+              <h4>Web Design</h4>
+            </div>        
+          </div>
           </router-link>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <router-link to="/wood">
-            <div class="w3-display-container projectsPhoto" type="button">
-              <div class="w3-display-topleft w3-black w3-padding">WOOD Coffee Company</div>
-              <img src="/assets/woodCoffee.jpg" alt="WOOD" style="width:100%" />
-            </div>
+          <div class="w3-display-container projectsPhoto" type="button">
+            <div class="w3-display-topleft w3-black w3-padding">WOOD Coffee Company</div>
+            <img src="/assets/woodCoffee.jpg" alt="WOOD" style="width:100%" />
+            <div class="photo-text">
+              <h4>Brand & Product Design</h4>
+            </div>        
+          </div>
           </router-link>
         </div>
       </div>
@@ -63,20 +75,26 @@
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-display-container projectsPhoto" type="button">
             <div class="w3-display-topleft w3-black w3-padding">Postgirl</div>
-            <img src="/assets/postgirl.png" alt="Postgirl" style="width:100%" />
+            <img src="/assets/macpostgirl.png" alt="Postgirl" style="width:100%" />
+            <div class="photo-text">
+              <h4>Web Design<br>(In Progress)</h4>
+            </div>        
           </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-display-container projectsPhoto" type="button">
-            <div class="w3-display-topleft w3-black w3-padding">Ubet</div>
-            <img src="/assets/dice.png" alt="Ubet" style="width:100%;" />
+            <div class="w3-display-topleft w3-black w3-padding projectTitle">Ubet</div>
+            <img src="/assets/macubet.png" alt="Ubet" style="width:100%;" />
+            <div class="photo-text">
+              <h4>Phone App Design<br>(In Progress)</h4>
+            </div>        
           </div>
         </div>
       </div>
 
       <!-- About Section -->
       <div class="w3-container w3-padding-32" id="about">
-        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="display: flex;">About</h3>
         <p>
           Hi there! I combine my unique, cross-cultural and interdisciplinary experiences into a tool kit that aids my clients in everything from
           branding to web design. As an freelance Web & brand Designer, I am working to integrate UX methodology and research into my work

@@ -21,25 +21,42 @@
       <div class="w3-container w3-padding-32" id="projects">
         <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Computex</h3>
       </div>
+      <div style="text-align: left;">
+        <span>Computex is a project about intellectual greenhouse that is able to monitor and contorl every single paramenter of the crops</span>
+        <br>
+        <span>Web designs for Computex that entails:</span>
+        <div style="padding: 10px;">
+        <ul>
+          <li>HTML5, CSS3, Javascript</li>
+          <li>CSS List based navigation bar</li>
+          <li>Flexbox, Transition</li>
+          <li>100% width responsive background</li>
+          <li>Show/Hide div that opens from a link within a page</li>
+        </ul>
+        </div>
+        <span style="padding: 10px;"><p><strong>Programs: </strong>Vue.js (Code), Adobe XD, Adobe Photoshop (Concept Design)</p></span>
+        
+              </div>
+      
 
       <v-carousel :show-arrows="false" style="height: auto;">
         <v-carousel-item
-          v-for="(comp,i) in comps"
+          v-for="(maccomp,i) in maccomps"
           :key="i"
-          :src="comp.src"
+          :src="maccomp.src"
         ></v-carousel-item>
       </v-carousel>
 
 
         <!-- About Section -->
         <div class="w3-container w3-padding-32" id="about">
-          <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+          <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="display: flex;">About</h3>
           <p>
-            Hi there! I combine my unique design experiences into a tool kit that aids my clients in everything from
-            branding to web design. As an HCI student, I am working to integrate UX methodology and research into my work
-            as a designer to create beautiful and meaningful visual experiences. My interests include data visualization,
-            visual design psychology, and micro-interaction design. You'll often find me drinking iced Americano
-            (year-round) at a local coffee shop, poorly tending to my succulents, and playing with film camera.
+            Hi there! I combine my unique, cross-cultural and interdisciplinary experiences into a tool kit that aids my clients in everything from
+          branding to web design. As an freelance Web & brand Designer, I am working to integrate UX methodology and research into my work
+          as a designer to create beautiful and meaningful visual experiences. My interests include data visualization,
+          visual design psychology, and graphical design. You'll often find me drinking iced Americano
+          (year-round) at a local coffee shop, poorly tending to my succulents, and playing with film camera.
           </p>
         </div>
   
@@ -50,11 +67,11 @@
               <img src="/assets/alexProfilePic.jpg" alt="Alex" style="width:100%" />
             </div>
             <h3>Alexander Pan</h3>
-            <p class="w3-opacity">CEO & Founder</p>
+            <p class="w3-opacity">>Developer & Designer</p>
             <p>
               I'm a Designer with a passion for effective design that helps both the client and user achieve their goals.
-              I'm currently pursuing a Master's degree in Human-Computer Interaction and Design at UC Irvine while working
-              as an intern full stack developer at GIGABYTE Technology. Feel free to take a look at some of my work.
+              I'm currently planing on pursuing a Master's degree in Human-Computer Interaction while working
+              as an Full-Stack Developer intern at GIGABYTE Technology. Feel free to take a look at some of my work.
             </p>
             <p>
               <a href="#contact">
@@ -117,23 +134,23 @@ export default {
 
   data() { return {
 
-comps: [
+maccomps: [
     {
-      src:'/assets/computex.png',
+      src:'/assets/maccomp1.png',
     },
     {
-      src:'/assets/comp2.png',
+      src:'/assets/maccomp2.png',
     },
     {
-      src:'/assets/comp3.png',
+      src:'/assets/maccomp3.png',
     }, {
-      src:'/assets/comp4.png',
+      src:'/assets/maccomp4.png',
     }, {
-      src:'/assets/comp5.png',
+      src:'/assets/maccomp5.png',
     }, {
-      src:'/assets/comp6.png',
+      src:'/assets/maccomp6.png',
     }, {
-      src:'/assets/comp7.png',
+      src:'/assets/maccomp7.png',
     },
   ],
 

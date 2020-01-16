@@ -111,14 +111,19 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-
+.w3-top{
+  z-index: 3;
+}
+.projectTitle{
+  z-index: 2;
+}
 .w3-animate-zoom {
   animation: animatezoom 2.7s;
 }
 .projectsPhoto > div {
-  z-index: 2;
+  z-index: 1;
 }
-.projectsPhoto > img:hover {
+.projectsPhoto:hover >img {
   transform: scale(1.2);
   transition: all 500ms ease-in;
   filter: invert(1);
@@ -131,4 +136,31 @@ export default {
 .aboutBox {
   margin: 0 auto;
 }
+.v-image__image--cover {
+  background-size: contain !important;
+}
+.photo-text{
+	    position: absolute;
+	    top: 0; right: 0;
+	    bottom: 0; left: 0;
+	    text-align: center;
+	    background-color: rgba(0,0,0,0.8);
+	    opacity: 0;
+	    -webkit-transition: opacity 0.6s;
+	    -moz-transition: opacity 0.6s;
+	    transition: opacity 0.6s;
+       vertical-align:middle;
+       line-height:200px;
+	}
+
+	.photo-text:hover{
+	    opacity: 1;      
+	}
+
+	.photo-text h4{
+	    color: white;
+	    display: inline-table;
+       vertical-align:middle;
+       line-height:100%;            
+	}
 </style>
