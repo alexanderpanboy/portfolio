@@ -77,7 +77,7 @@
             <div class="w3-display-topleft w3-black w3-padding">Postgirl</div>
             <img src="/assets/macpostgirl.png" alt="Postgirl" style="width:100%" />
             <div class="photo-text">
-              <h4>Web Design</h4>
+              <h4>Web Design<br>(In Progress)</h4>
             </div>        
           </div>
         </div>
@@ -86,7 +86,7 @@
             <div class="w3-display-topleft w3-black w3-padding projectTitle">Ubet</div>
             <img src="/assets/macubet.png" alt="Ubet" style="width:100%;" />
             <div class="photo-text">
-              <h4>Phone App Design</h4>
+              <h4>Phone App Design<br>(In Progress)</h4>
             </div>        
           </div>
         </div>
@@ -94,7 +94,7 @@
 
       <!-- About Section -->
       <div class="w3-container w3-padding-32" id="about">
-        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="display: flex;">About</h3>
         <p>
           Hi there! I combine my unique, cross-cultural and interdisciplinary experiences into a tool kit that aids my clients in everything from
           branding to web design. As an freelance Web & brand Designer, I am working to integrate UX methodology and research into my work

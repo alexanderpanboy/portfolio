@@ -21,6 +21,22 @@
       <div class="w3-container w3-padding-32" id="projects">
         <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Computex</h3>
       </div>
+      <div style="text-align: left;">
+        <span>Computex is a project about intellectual greenhouse that is able to monitor and contorl every single paramenter of the crops</span>
+        <br>
+        <span>Web designs for Computex that entails:</span>
+        <div style="padding: 10px;">
+        <ul>
+          <li>HTML5, CSS3, Javascript</li>
+          <li>CSS List based navigation bar</li>
+          <li>Flexbox, Transition</li>
+          <li>100% width responsive background</li>
+          <li>Show/Hide div that opens from a link within a page</li>
+        </ul>
+        </div>
+        <span style="padding: 10px;"><p><strong>Programs: </strong>Vue.js (Code), Adobe XD, Adobe Photoshop (Concept Design)</p></span>
+        
+              </div>
       
 
       <v-carousel :show-arrows="false" style="height: auto;">
@@ -34,7 +50,7 @@
 
         <!-- About Section -->
         <div class="w3-container w3-padding-32" id="about">
-          <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+          <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="display: flex;">About</h3>
           <p>
             Hi there! I combine my unique, cross-cultural and interdisciplinary experiences into a tool kit that aids my clients in everything from
           branding to web design. As an freelance Web & brand Designer, I am working to integrate UX methodology and research into my work
