@@ -123,7 +123,7 @@ export default {
 .projectsPhoto > div {
   z-index: 1;
 }
-.projectsPhoto > img:hover {
+.projectsPhoto:hover >img {
   transform: scale(1.2);
   transition: all 500ms ease-in;
   filter: invert(1);
