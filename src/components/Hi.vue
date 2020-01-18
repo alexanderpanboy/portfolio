@@ -147,6 +147,7 @@
             required
             name="Name"
             v-model="contacts.name"
+             id="inputbox1"
           />
           <input
             class="w3-input w3-section w3-border"
@@ -155,6 +156,7 @@
             required
             name="Email"
             v-model="contacts.email"
+             id="inputbox2"
           />
           <input
             class="w3-input w3-section w3-border"
@@ -163,6 +165,7 @@
             required
             name="Subject"
             v-model="contacts.subject"
+             id="inputbox3"
           />
           <input
             class="w3-input w3-section w3-border"
@@ -171,6 +174,7 @@
             required
             name="Comment"
             v-model="contacts.content"
+            id="inputbox4"
           />
           <button class="w3-button w3-black w3-section" v-on:click="sendMail">SEND MESSAGE</button>
         </form>
@@ -197,6 +201,10 @@ export default {
     sendMail: function(event) {
       console.log(this.$data.contacts.email);
       emailjs.init("user_u4GAv8TMoLRBRzc85WVML");
+      document.getElementById("inputbox1").value = "";
+      document.getElementById("inputbox2").value = "";
+      document.getElementById("inputbox3").value = "";
+      document.getElementById("inputbox4").value = "";
       if (!(this.contacts.email, this.contacts.subject, this.contacts.content, this.contacts.name)) return;
       var templateParams = {
         from: this.contacts.email,
@@ -208,6 +216,7 @@ export default {
       emailjs.send("gmail", "template_SnVkR0DV", templateParams).then(
         function(response) {
           console.log("SUCCESS!", response.status, response.text);
+          alert("EMAIL SENT!")
         },
         function(error) {
           console.log("FAILED...", error);

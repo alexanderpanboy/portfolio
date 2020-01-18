@@ -100,14 +100,23 @@
         <div class="w3-container w3-padding-32" id="contact">
           <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
           <p>Lets get in touch and talk about your next project.</p>
-          <form action="/action_page.php" target="_blank">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" />
+          <form v-on:submit.prevent>
+          <input
+            class="w3-input w3-border"
+            type="text"
+            placeholder="Name"
+            required
+            name="Name"
+            v-model="contacts.name"
+             id="inputbox1"
+          />
             <input
               class="w3-input w3-section w3-border"
               type="text"
               placeholder="Email"
               required
               name="Email"
+              id="inputbox2"
             />
             <input
               class="w3-input w3-section w3-border"
@@ -115,6 +124,7 @@
               placeholder="Subject"
               required
               name="Subject"
+              id="inputbox3"
             />
             <input
               class="w3-input w3-section w3-border"
@@ -122,9 +132,10 @@
               placeholder="Comment"
               required
               name="Comment"
+              id="inputbox4"
             />
-            <button class="w3-button w3-black w3-section" type="submit">
-              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            <button class="w3-button w3-black w3-section" v-on:click="sendMail">
+              SEND MESSAGE
             </button>
           </form>
         </div>
@@ -169,6 +180,10 @@ export default {
     sendMail: function(event) {
       console.log(this.$data.contacts.email);
       emailjs.init("user_u4GAv8TMoLRBRzc85WVML");
+      document.getElementById("inputbox1").value = "";
+      document.getElementById("inputbox2").value = "";
+      document.getElementById("inputbox3").value = "";
+      document.getElementById("inputbox4").value = "";
       if (!(this.contacts.email, this.contacts.subject, this.contacts.content, this.contacts.name)) return;
       var templateParams = {
         from: this.contacts.email,
