@@ -67,7 +67,7 @@
               <img src="/assets/alexProfilePic.jpg" alt="Alex" style="width:100%" />
             </div>
             <h3>Alexander Pan</h3>
-            <p class="w3-opacity">>Developer & Designer</p>
+            <p class="w3-opacity">Developer & Designer</p>
             <p>
               I'm a Designer with a passion for effective design that helps both the client and user achieve their goals.
               I'm currently planing on pursuing a Master's degree in Human-Computer Interaction while working
@@ -153,8 +153,31 @@ maccomps: [
       src:'/assets/maccomp7.png',
     },
   ],
+  contacts: [{ email: "", subject: "", content: "", name: "" }],
 
 };
-}
+},
+methods: {
+    sendMail: function(event) {
+      console.log(this.$data.contacts.email);
+      emailjs.init("user_u4GAv8TMoLRBRzc85WVML");
+      if (!(this.contacts.email, this.contacts.subject, this.contacts.content, this.contacts.name)) return;
+      var templateParams = {
+        from: this.contacts.email,
+        subject: this.contacts.subject,
+        content: this.contacts.content,
+        name: this.contacts.name
+      };
+
+      emailjs.send("gmail", "template_SnVkR0DV", templateParams).then(
+        function(response) {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function(error) {
+          console.log("FAILED...", error);
+        }
+      );
+    }
+  }
 };
 </script>

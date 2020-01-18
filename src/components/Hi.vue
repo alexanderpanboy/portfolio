@@ -139,7 +139,7 @@
             placeholder="Name"
             required
             name="Name"
-            v-model="name"
+            v-model="contacts.name"
           />
           <input
             class="w3-input w3-section w3-border"
@@ -147,7 +147,7 @@
             placeholder="Email"
             required
             name="Email"
-            v-model="email"
+            v-model="contacts.email"
           />
           <input
             class="w3-input w3-section w3-border"
@@ -155,7 +155,7 @@
             placeholder="Subject"
             required
             name="Subject"
-            v-model="subject"
+            v-model="contacts.subject"
           />
           <input
             class="w3-input w3-section w3-border"
@@ -163,7 +163,7 @@
             placeholder="Comment"
             required
             name="Comment"
-            v-model="content"
+            v-model="contacts.content"
           />
           <button class="w3-button w3-black w3-section" v-on:click="sendMail">SEND MESSAGE</button>
         </form>
@@ -182,17 +182,20 @@
 <script>
 export default {
   name: "aa",
-  data: () => ({ email: "", subject: "", content: "", name: "" }),
+  data() {return{ 
+   contacts: [{ email: "", subject: "", content: "", name: "" }],
+  };
+  },
   methods: {
     sendMail: function(event) {
-      console.log(this.$data.email);
+      console.log(this.$data.contacts.email);
       emailjs.init("user_u4GAv8TMoLRBRzc85WVML");
-      if (!(this.email, this.subject, this.content, this.name)) return;
+      if (!(this.contacts.email, this.contacts.subject, this.contacts.content, this.contacts.name)) return;
       var templateParams = {
-        from: this.email,
-        subject: this.subject,
-        content: this.content,
-        name: this.name
+        from: this.contacts.email,
+        subject: this.contacts.subject,
+        content: this.contacts.content,
+        name: this.contacts.name
       };
 
       emailjs.send("gmail", "template_SnVkR0DV", templateParams).then(
