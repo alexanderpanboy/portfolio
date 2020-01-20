@@ -61,7 +61,7 @@
 <v-row style="justify-space-between">
   <v-col cols="5">
 <div>
-            <img src="/assets/about2.jpg" alt="Alex" style="width:100%" />
+            <img src="/assets/about2.png" alt="Alex" style="width:100%" />
 </div>
           <h3>Alexander Pan</h3>
           <p class="w3-opacity">Developer & Designer</p>
