@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve --mode development ",
     "build": "vue-cli-service build",
-    "publish": "aws s3 cp ./dist/ s3://www.alexander-pan.com/ --recursive --include \"*\"",
+    "publish": "vue-cli-service build & aws s3 cp ./dist/ s3://www.alexander-pan.com/ --recursive --include \"*\"",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
