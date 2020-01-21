@@ -26,6 +26,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### Publish
 ->install aws cli
 ->aws configuration
-ID : AKIASFBLSAVSFMH2FI5H
-KEY : Ac43AGnmlQ+3Biu2eKhWw+kR6lTNUlmWdRBpSPdu
 ->yarn run publish
